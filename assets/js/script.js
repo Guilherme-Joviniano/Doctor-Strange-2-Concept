@@ -1,36 +1,37 @@
 
 
-const el = document.querySelector("#button-text")
-const video = document.querySelector(".bg-video")
-const button = document.querySelector(".button")
-let count = 0
+const el = document.querySelector(".button")
+const videoPlace = document.querySelector("main")
+const content = document.querySelector(".content")
+const backButton = document.querySelector("#button-voltar")
+const video = `
+        <iframe width="900px" height="600px" src="https://www.youtube.com/embed/X23XCFgdh2M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="button"> <a href="index.html"><span>Voltar</span> </div>
+        `
 
-
-const close = () =>{
-    window.location.reload()
+const animacao = () =>{
+    
+    document.querySelector('.content').classList.add("fade-out")
+    document.querySelector('body').style.backgroundColor = "#000E"
+    
+}
+function resolver2segundos(){
+    return new Promise(animacao =>{
+        setTimeout(()=>{
+            animacao()
+        }, 1000)
+    });
 }
 
-const modifyLocal = () => {    
-    if(count%2 == 0){
-    document.querySelector('.container').style.background ='#000'
-    
-    
-    video.style.display = "block"
-    button.style.zIndex  = "100"
+async function abrirTrailer(){
+    //animation
+    await resolver2segundos();
 
-    el.innerHTML = `Fechar o Trailer &#x2715 `
-    button.style.position= "absolute"
-    button.style.marginLeft= "700px"
-    button.style.top= "175%"
-    count++
-    return
-    }
-    close()    
-    return
+    videoPlace.innerHTML = video
     
 }
 
 console.log(el)
-el.addEventListener("click", modifyLocal,true)
+el.addEventListener("click", abrirTrailer ,true)
 
 
