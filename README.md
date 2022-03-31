@@ -1,3 +1,3 @@
 # Doctor-Strange-2-Concept
 
-<a style="color: red;" href= "encurtador.com.br/suSX4" >Link for the Site</a>
+<a style="color: red;" href= "https://guilherme-joviniano.github.io/Doctor-Strange-2-Concept/" >Link for the Site</a>
