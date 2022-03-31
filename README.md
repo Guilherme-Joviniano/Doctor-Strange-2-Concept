@@ -1,2 +1,3 @@
 # Doctor-Strange-2-Concept
-## Link -> encurtador.com.br/suSX4
+
+<a style="color: red;" href= "encurtador.com.br/suSX4" >Link for the Site</a>
