@@ -1,0 +1,15 @@
+main{
+    align-items: center;
+    justify-content: space-around;
+}
+.image img{
+    border-radius: 16px;
+    width: 350px;
+    height: 384px;
+    image-rendering: optimizeQuality;
+    transition: .3s all;
+    filter: grayscale(90%);
+}
+.image img:hover{
+    filter: grayscale(0%);
+}

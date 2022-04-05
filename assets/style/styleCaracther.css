@@ -1,0 +1,90 @@
+body{
+    background-color: #000;
+    padding-bottom: 80px;
+    padding-right: 128px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: auto;
+    flex-grow: 100;
+    margin-top: 40px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    flex: 4;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.name{
+    display: flex;
+    position: relative;
+    top: 20px;
+    align-items: left;
+    flex-direction: column;
+    font-family: "Mulish";
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.name span{
+    position: relative;
+    top: -15px;
+    font-weight: bold;
+    white-space: wrap;
+    font-size: 2.65rem;
+}
+.content-image{
+    width: 300px;
+    height: 556px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.text{
+    background-color: #000000b0;
+    padding: 30px;
+    font-size: 1.3rem;
+    margin-top: 100px;
+    border-radius: 16px;
+    height: 100%;
+    font-family: "Mulish";
+    font-weight: lighter;
+    text-align: left;
+}
+.btn-content{
+    position: relative;
+    top: -45px;
+    width: 250px;
+    height: 90px;
+    font-size: 2rem;
+    font-family: "Mulish";
+    font-weight: lighter;
+    border-radius: 0px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+#wanda-image{
+    background-image: url(../imgs/wanda.jpg);
+    backdrop-filter: grayscale(10%);
+    background-position-x: 70%;
+}
+#strange-image{
+    background-position-x: 60%;
+    background-image: url(../imgs/strange.jpg);
+}
+#america-image{
+    background-position: center;
+    background-image: url(../imgs/america.jpg);
+}
+#wong-image{
+    background-image: url(../imgs/wong.jpg);
+}
+@media(max-width: 768px){
+    body{
+        padding-right: 0px;
+    }
+}
