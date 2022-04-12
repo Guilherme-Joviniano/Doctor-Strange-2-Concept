@@ -231,7 +231,8 @@ i{
 }
 /*footer*/
 footer{
-    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
     text-align: center;
     flex-grow: 0.5;
 }
@@ -241,7 +242,7 @@ footer span{
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
-
+    
 }
 @media(max-width: 768px){
     html,body{
