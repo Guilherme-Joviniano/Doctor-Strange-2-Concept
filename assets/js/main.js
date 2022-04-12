@@ -33,8 +33,11 @@ const navbar = document.querySelector('.navbar')
 
 btnNav.addEventListener("click",function(){
   if(navbar.style.display == "flex"){
+    btnNav.classList.remove('close')
     navbar.style.display = 'none'
   }else{
+    
+    btnNav.classList.add('close')
     navbar.style.display = 'flex'
   }
 })

@@ -308,17 +308,17 @@ footer span{
     .menu-burguer::after{
         transform: translateY(12px);
     }
-
-    .menu-burguer-container:hover .menu-burguer{
-        background-color: transparent;
-    }
-    .menu-burguer-container:hover .menu-burguer::before{
+    
+    .close .menu-burguer::before{
         transform: rotate(45deg);
     }
-    .menu-burguer-container:hover .menu-burguer::after{
+    .close .menu-burguer::after{
         transform: rotate(-45deg);
     }
-  
+    .close .menu-burguer{
+        background-color: transparent;
+    }
+
     .content{
         width: 90vw;
         align-items: center;
