@@ -233,6 +233,7 @@ i{
 footer{
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     text-align: center;
     flex-grow: 0.5;
 }
