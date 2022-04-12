@@ -60,6 +60,12 @@ a{
     --white: #fff;
     --main-red: #FF031A;
 }
+iframe{
+    width: 80vw;
+    height: 70vh;
+    position: relative;
+    left: -300px;
+}
 
 body{
     padding: 128px;
