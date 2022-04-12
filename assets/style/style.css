@@ -231,6 +231,7 @@ i{
 }
 /*footer*/
 footer{
+    margin-top: 20px;
     text-align: center;
     flex-grow: 0.5;
 }

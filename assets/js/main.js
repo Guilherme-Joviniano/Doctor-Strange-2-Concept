@@ -12,7 +12,9 @@ document.querySelectorAll(".btn-content").forEach((button, index) => {
   button.onclick = (event) => {
   textPlace = document.querySelector(`#${button.id}-image`)
   if(count % 2 == 0){
+      
       textPlace.innerHTML = `<div class="text">${cardsContent[button.id]}</div>` 
+      
       button.innerHTML = "FECHAR"
       count++
     }else{
