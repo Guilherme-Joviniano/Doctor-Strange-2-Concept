@@ -56,7 +56,7 @@ body{
     width: 100vw;
     height: 100vh;
     background:linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.85) 40.62%, rgba(0, 0, 0, 0) 62.5%),
-               url(../imgs/backgroud.png);
+               url(/assets/imgs/backgroud.png);
     background-size: cover;
     background-position: right;
     background-blend-mode: darken;
@@ -71,13 +71,11 @@ header{
     flex-grow: 1;
 }
 .logo-marvel{
-
     height: 36px;
 }
 .navbar{
     list-style: none;
     position: relative;
-
     display: flex;
     gap: 40px;
 }
@@ -230,21 +228,52 @@ footer span{
         overflow-x: hidden;
     }
     body{
-
         background-color: rgba(0, 0, 0, 0.647);
         background-image: url(../imgs/backgroud.png);
         background-position-x: 90%;
         background-blend-mode: darken;
-               background-repeat: no-repeat;
+        background-repeat: no-repeat;
         background-position-x: 100%;
-        /* overflow: hidden; */
         padding: 30px;
+    }
+    .navbar{
+        display: none;
     }
     .logo-marvel{
         height: 40px;
     }
-    .navbar{
-        display: none;
+  
+    .menu-burguer-container{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        
+    }
+    .menu-burguer, .menu-burguer::before, .menu-burguer::after{
+        content: "";
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 40px;
+        background: #fff;
+        transition: .3s all ease-in-out;
+    }
+    .menu-burguer::before{
+        transform: translateY(-12px);
+    }
+    .menu-burguer::after{
+        transform: translateY(12px);
+    }
+
+    .menu-burguer-container:hover .menu-burguer{
+        background-color: transparent;
+    }
+    .menu-burguer-container:hover .menu-burguer::before{
+        transform: rotate(45deg);
+    }
+    .menu-burguer-container:hover .menu-burguer::after{
+        transform: rotate(-45deg);
     }
     .content{
         width: 90vw;
@@ -258,12 +287,12 @@ footer span{
     .content h1 span{
         position: relative;
         top: -55px;
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .content h2{
-
+        width: calc(100vw - 30px );
         text-align: center;
-        font-size: 2.3rem;
+        font-size: 1.7rem;
     }
     .content .text{
         display: none;
@@ -275,10 +304,14 @@ footer span{
         width: 300px;
     }
     iframe{
+        height: 400px;
         width: 80vw;
         position: relative;
-        left: -150px;
+        left: -7
+        0px;
         margin: 0px;
         padding: 0px;
     }
+    
 }
+
