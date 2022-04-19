@@ -44,10 +44,11 @@ main{
     background-size: cover;    
 }
 .text{
+    animation: fade-in .5s;
     background-color: #000000b0;
+    backdrop-filter: blur(10px);
     padding: 30px;
     font-size: 1.3rem;
-    margin-top: 100px;
     border-radius: 16px;
     height: 100%;
     font-family: "Mulish";

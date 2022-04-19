@@ -57,3 +57,25 @@ document.addEventListener("click", function(e){
     videoPlace.innerHTML = video
   }
 }, true)
+
+
+const loader = document.querySelector('.loader-wrapper')
+
+window.addEventListener('load', function(){
+   loaderAnimation()
+   setTimeout(()=>{
+    loader.style.display = 'none'
+   }, 1900)
+}, false)
+
+async function loaderAnimation(){
+
+  loader.style.opacity = 0;
+  loader.transition = '2s';
+  loader.style.opacity = 1;
+  loader.style.transition = '2s';
+  loader.style.opacity = 0;
+  
+  
+
+}
