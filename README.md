@@ -1,13 +1,5 @@
 
-<style>
-    a{
-        text-decoration: none;
-    }
-    a:hover{
-        
-    }
 
-</style>
 <h1 style='text-align:center; font-weight:bolder; border: none;'>Site Conceito  |  Concept Site</h1>
 
 <h1 style='text-align:center; font-weight:lighter; border: none; color: #FF031A;'> Doctor Strange and The Multiverse of Madness</h1>
